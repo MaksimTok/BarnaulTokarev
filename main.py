@@ -21,10 +21,11 @@ class Example(QMainWindow):
         qp.end()
 
     def random_coords(self):
-        x = random.randint(10, 200)
-        size = random.randint(10, 200)
-        dur = random.randint(-150, 150)
-        return x + dur, x + dur, x + size + dur, x + size + dur
+        x = random.randint(10, 215)
+        y = random.randint(10, 215)
+        #size = random.randint(10, 200)
+        dur = random.randint(0, 50)
+        return x, y, x + dur, x + dur
 
     def paint(self):
         self.update()
